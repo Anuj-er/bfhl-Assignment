@@ -1,0 +1,14 @@
+server:
+  port: ${PORT:8080}
+
+spring:
+  application:
+    name: bfhl-api
+
+app:
+  profile:
+    # Replace these defaults through hosting environment variables before you submit.
+    full-name: ${FULL_NAME:Anuj Kumar}
+    date-of-birth: ${DOB_DDMMYYYY:01042005}
+    email: ${EMAIL:anuj1699.be23@chitkara.edu.in}
+    roll-number: ${ROLL_NUMBER:2310991699}
