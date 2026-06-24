@@ -15,6 +15,12 @@ This project exposes a single REST endpoint:
 POST /bfhl
 ```
 
+Live deployment:
+
+```text
+https://bfhl-assignment-odtq.onrender.com/bfhl
+```
+
 It accepts an array of values and returns categorized numbers, alphabets, special characters, the numeric sum, and the required alternating-case reversed alphabet string.
 
 The implementation is intentionally clean and assignment-friendly:
@@ -219,22 +225,22 @@ This repository includes a root-level `Dockerfile`, so the simplest Render setup
 
 7. Click **Deploy Web Service**.
 
-8. After deployment succeeds, Render gives you a public URL like:
+8. After deployment succeeds, Render gives you a public URL:
 
    ```text
-   https://bfhl-assignment.onrender.com
+   https://bfhl-assignment-odtq.onrender.com
    ```
 
 9. Your final API endpoint will be:
 
    ```text
-   https://bfhl-assignment.onrender.com/bfhl
+   https://bfhl-assignment-odtq.onrender.com/bfhl
    ```
 
 10. Test the deployed endpoint:
 
     ```bash
-    curl --request POST https://bfhl-assignment.onrender.com/bfhl \
+    curl --request POST https://bfhl-assignment-odtq.onrender.com/bfhl \
       --header "Content-Type: application/json" \
       --data '{"data":["a","1","334","4","R","$"]}'
     ```
@@ -318,7 +324,7 @@ https://<your-render-service-name>.onrender.com/bfhl
 Example:
 
 ```text
-https://bfhl-assignment.onrender.com/bfhl
+https://bfhl-assignment-odtq.onrender.com/bfhl
 ```
 
 ---
